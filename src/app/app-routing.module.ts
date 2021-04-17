@@ -20,6 +20,10 @@ const routes: Routes = [
     canLoad:[AuthGuard],
   },
   {
+    path: 'splash',
+    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },
+  {
     path:'',
     redirectTo:'/login',
     pathMatch:'full'
