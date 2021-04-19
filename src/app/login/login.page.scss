@@ -1,12 +1,31 @@
 ion-content {
-    --padding-top: 40%;
+    --padding-top: 20%;
     --padding-start: 10%;
     --padding-end: 10%;
-    --background: url("/assets/background-b.jpeg") 0 0/100% 100% no-repeat black;
+    --background: url("/assets/like-edificio.png") 0 100%/100% 100% no-repeat rgba(255,255,255);
+
+    h1{
+        color:black;
+    }
+    ion-grid {
+        --padding-top: 20%;
+        --padding-start: 10%;
+        --padding-end: 10%;    
+    }
+
 }
+
+ion-footer{
+    ion-button{
+        font-size:xx-small;
+        border-radius: 30px;    
+    }
+}
+
 ion-button {
     border-radius: 15px;
 }
+
 
 .input-group {
     background: var(--ion-color-light);
