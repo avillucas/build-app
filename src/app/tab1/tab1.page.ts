@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-tab1',
@@ -6,5 +8,19 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  constructor() {}
+  
+  constructor(public router:Router) {}
+  public fotoLinda(){
+    //@todo completar proceso para decir que es linda o fea
+    this.foto();
+  }
+  public fotoFea(){
+    //@todo completar proceso para decir que es linda o fea
+    this.foto();
+  }
+  protected  foto(){
+    this.router.navigateByUrl('dashboard/tab3');
+  }
+
+
 }

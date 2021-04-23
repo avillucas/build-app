@@ -20,6 +20,10 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'vote',
+        loadChildren: () => import('../vote/vote.module').then( m => m.VotePageModule)
+      },
+      {
         path: '',
         redirectTo: '/dashboard/tab1',
         pathMatch: 'full'

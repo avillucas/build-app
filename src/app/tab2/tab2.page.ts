@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ItemsService, Item } from '../services/items.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-tab2',
@@ -6,5 +9,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-  constructor() {}
+
+  constructor(
+    public itemService:ItemsService   ,
+    public router:Router
+  )
+  {  }
+
+  public showItem(item:Item){       
+    this.router.navigate(['/dashboard/vote',{'id':item.id}]);
+  }
 }
+
+
