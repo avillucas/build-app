@@ -72,7 +72,7 @@ export class VotePage implements OnInit {
     //@todo completar
     setTimeout(()=>{
       loading.dismiss();
-      this.presentAlert('¡Perfecto!','Hemos marcado tu voto','¡Tu voto se guardo correctamente!');
+      this.presentAlert('¡Perfecto!','Hemos marcado tu voto','¡Tu voto se registró correctamente!');
     },1500);
 
   }

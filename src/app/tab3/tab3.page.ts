@@ -46,7 +46,7 @@ export class Tab3Page {
     await alert.present();
 
     const { role } = await alert.onDidDismiss();
-    console.log('onDidDismiss resolved with role', role);
+    //console.log('onDidDismiss resolved with role', role);
   }
  
   async uploadPhoto(){
@@ -55,7 +55,7 @@ export class Tab3Page {
     //@todo completar
     setTimeout(()=>{
       loading.dismiss();
-      this.presentAlert('¡Perfecto!','La imagen fue publicada','La imagen se cargo correctamente ');
+      this.presentAlert('¡Perfecto!','La imagen fue publicada','La imagen se cargó correctamente');
     },1500);
   }
 
